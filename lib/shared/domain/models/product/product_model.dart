@@ -1,3 +1,5 @@
+import 'dart:core';
+
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'product_model.freezed.dart';
@@ -17,7 +19,7 @@ class Product with _$Product {
     @Default(0.0) double rating,
     @Default(0.0) double discountPercentage,
     @Default(0) int stock,
-    @Default(0) int price,
+    @Default(0.0) double price,
     @Default([]) List<String> images,
   }) = _Product;
 
